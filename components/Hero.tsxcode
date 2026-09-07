@@ -1,0 +1,151 @@
+'use client';
+
+import { motion } from 'framer-motion';
+
+export default function Hero(){
+
+return (
+
+<section
+style={{
+minHeight:"90vh",
+display:"flex",
+alignItems:"center",
+padding:"80px 8%",
+position:"relative",
+overflow:"hidden"
+}}
+>
+
+
+<div
+style={{
+position:"absolute",
+width:"500px",
+height:"500px",
+background:"#2563eb",
+filter:"blur(180px)",
+opacity:.35,
+top:"10%",
+left:"30%"
+}}
+/>
+
+
+
+<motion.div
+
+initial={{
+opacity:0,
+y:50
+}}
+
+animate={{
+opacity:1,
+y:0
+}}
+
+transition={{
+duration:.8
+}}
+
+>
+
+
+<p
+style={{
+color:"#39a8ff",
+fontSize:"1.2rem"
+}}
+>
+Premium Digital Services
+</p>
+
+
+
+<h1
+style={{
+fontSize:"clamp(3rem,8vw,7rem)",
+lineHeight:1,
+fontWeight:900
+}}
+>
+SDS PRIME DIGITAL
+</h1>
+
+
+
+<h2
+style={{
+fontSize:"2rem",
+marginTop:"30px"
+}}
+>
+Premium Apps For Your Digital Lifestyle
+</h2>
+
+
+
+<p
+style={{
+fontSize:"1.2rem",
+color:"#cbd5e1",
+marginTop:"20px"
+}}
+>
+Streaming • AI • Editing • Productivity
+</p>
+
+
+
+<div
+style={{
+display:"flex",
+gap:"20px",
+marginTop:"40px"
+}}
+>
+
+
+<a
+href="https://wa.me/62895320797199"
+style={{
+background:"#2563eb",
+padding:"16px 32px",
+borderRadius:"999px",
+color:"white",
+fontWeight:700,
+textDecoration:"none"
+}}
+>
+Order Sekarang
+</a>
+
+
+
+<a
+href="#produk"
+style={{
+border:"1px solid #334155",
+padding:"16px 32px",
+borderRadius:"999px",
+color:"white",
+textDecoration:"none"
+}}
+>
+Lihat Produk
+</a>
+
+
+</div>
+
+
+
+</motion.div>
+
+
+</section>
+
+)
+
+}
